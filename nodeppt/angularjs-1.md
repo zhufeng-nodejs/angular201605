@@ -18,7 +18,7 @@ highlightStyle:javascript
   - 前后端分离,后台只提供数据接口，路由模板渲染都在前端进行
   - html和JS分离，展示和逻辑分离
   - 减少js代码，减少DOM操作，事件绑定等代码 
-  - 适合API的方式进行开发  
+  - 适合API的方式进行开发        
 [slide]
 # 安装 AngularJS   
   - 安装bower 
@@ -37,7 +37,7 @@ highlightStyle:javascript
   - ng-app
   - ng-init
   - ng-repeat
-  - ng-class (写一个隔行变色)
+  - ng-class
   - ng-style
   - ng-click
   - ng-model

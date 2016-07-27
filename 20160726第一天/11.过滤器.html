@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+  <meta charset="UTF-8">
+  <title>angular</title>
+
+</head>
+<body>
+<!--1. currency 货币过滤器-->
+<!--<input type="text" ng-model="name">-->
+<!--{{name | currency : '￥'}}-->
+<!--{{name | currency : '£'}}-->
+<!--2. date 日期过滤器-->
+<!--{{1469603978903 |date: 'yyyy-MM-dd HH:mm:ss' }}-->
+<!--只要时间不要日期-->
+<!--3. json 把普通的对象转换成json格式的对象-->
+<!--{{ {name:'zfpx'} | json}}-->
+<!--4. uppercase lowercase-->
+<!--<input type="text" ng-model="name">-->
+<!--{{name | uppercase}}-->
+<!--{{name | lowercase}}-->
+<!--5. number 定义小数点的位数-->
+<!--<input type="text" ng-model="name">-->
+{{name | number:2}}
+<!--6. limitTo 截取字符串的长度，数组的长度-->
+{{'zfpx' | limitTo:2}}
+{{[1,2,3,4] | limitTo:2}}
+<!--7.filter -->
+<!--把数组中的与匹配过滤内容一致的数组以一个新的数组返回-->
+<!--8. orderBy -->
+<!--用来排序，将数组排序返回一个新的数组-->
+
+
+
+
+
+
+<script src="angular.js"></script>
+<script>
+  /**
+   * currency
+   date
+   json
+   uppercase lowercase
+   number
+   limitTo
+   filter
+   orderBy
+   */
+
+//  {{ 数据  | 过滤器 : 参数}}
+
+
+
+
+
+</script>
+</body>
+</html>
