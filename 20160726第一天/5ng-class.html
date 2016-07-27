@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+  <meta charset="UTF-8">
+  <title>angular</title>
+  <style>
+    .c1{
+      color: red;
+    }
+    .bg1{
+      background: green;
+    }
+  </style>
+</head>
+<body>
+<div ng-init="flag1=true;flag2=true"></div>
+<button ng-click="flag2 = !flag2">改变背景颜色</button>
+
+<div ng-class="{ c1:flag1,bg1:flag2}">
+  今天天气很好！！
+</div>
+<script src="angular.js"></script>
+<script>
+  //ng-class="{ true:'c1',false:'c2'}[flag]"
+  //ng-class="{ c1:flag1,bg1:flag2}"
+</script>
+</body>
+</html>
