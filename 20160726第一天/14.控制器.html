@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <title>angular</title>
+
+</head>
+<body>
+
+<div ng-controller="myCtrl">
+  <!--可以拿到父级作用域的数据-->
+  {{name}}
+</div>
+
+<script src="angular.js"></script>
+<script>
+  var app = angular.module('myApp',[]);//不依赖于其他模板的话，必须写一个[] ,创建一个模板
+  app.controller('myCtrl',function ($scope) {
+//    $scope 是固定的不可以修
+//    定义变量或者方法都是给$scope添加对象
+    $scope.name='zfpx';
+    console.log($scope);
+
+  });//创建一个控制器
+
+
+</script>
+</body>
+</html>

@@ -10,13 +10,13 @@
 <br/>
 <br/>
 <div ng-init="persons=[{name:'张三',age:20,math:80},{name:'李四',age:18,math:90},{name:'王五',age:25,math:70}];flag=true
-     ;query='age'" ></div>
+     " ></div>
 <table class="table table-bordered">
     <tr>
         <th>序号</th>
-        <th>姓名</th>
-        <th ng-click="flag=!flag;query='age'">年龄</th>
-        <th ng-click="flag=!flag ;query='math'">数学</th>
+        <th ng-click="flag=!flag;query='name'">姓名</th>
+        <th>年龄</th>
+        <th>数学</th>
     </tr>
     <!--  <tr ng-repeat="person in persons |filter : query ">
         <td>{{$index+1}}</td>
