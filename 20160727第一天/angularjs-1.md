@@ -5,14 +5,14 @@
   - angular 常用的方法  
   [网址 http://docs.ngnice.com/api](http://docs.ngnice.com/api)   
 ## 认识angular
-- angular是什么
-  - 完全使用javascript编写的客户端技术
-  - 一种构建web应用的非常结构化的框架 
-- angular的优点
-  - 前后端分离,后台只提供数据接口，路由模板渲染都在前端进行
-  - html和JS分离，展示和逻辑分离
-  - 减少js代码，减少DOM操作，事件绑定等代码 
-  - 适合API的方式进行开发        
+  - angular是什么
+     - 完全使用javascript编写的客户端技术
+     - 一种构建web应用的非常结构化的框架 
+  - angular的优点
+     - 前后端分离,后台只提供数据接口，路由模板渲染都在前端进行
+     - html和JS分离，展示和逻辑分离
+     - 减少js代码，减少DOM操作，事件绑定等代码 
+     - 适合API的方式进行开发        
 ## 安装 AngularJS   
   - 安装bower 
   - npm install -g bower 
