@@ -21,8 +21,14 @@
 </div>
 <script src="angular.js"></script>
 <script>
-  //ng-class="{ true:'c1',false:'c2'}[flag]"
-  //ng-class="{ c1:flag1,bg1:flag2}"
+  // ng-class ：给DOM元素动态添加样式类名的指令
+  //  语法有两种
+  //  1  ng-class="{true:'c1',false:'c2'}[flag]"  如果flag为true就显示C1的样式，如果flag为false就显示c2的值
+  //  2  ng-class="{bg1:flag1,c1:flag2}" 如果flag1为true时，bg1有效，否则就无效；flag2同理
+  //  区别：第一种是有你没我，第二钟是有你也可以由我，彼此是否存在没有关系；
+
+  //  ng-click
+  //  给当前元素绑定一个点击事件，当点击的时候执行其后面的方法
 </script>
 </body>
 </html>

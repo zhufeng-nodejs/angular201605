@@ -52,17 +52,19 @@
 //  angular.forEach(arr,function (item,index) {
 //    console.log(this.name, item ,index)
 //  },arr1);
-//  7.bind
+//  7.bind  预处理this的指向
 //  参数1）this指向，参数2）要改this的方法fn，参数3）及之后的参数 都是给fn传递的参数
-  function eat(num) {
-    console.log(this , num);
+  var obj6={name:'zfpx'};
+  function fn(age){
+    console.log(this.name+"已经"+age+"岁了");
   }
-  obj={name:'zfpx'};
-  var fn = angular.bind(obj,eat,8);
-  fn();
+  var fn1 = angular.bind(obj6,fn,8);
+  fn1();
 // 8.isArray isFunction isObject 返回的都是boolean类型 true 或者false
   var flag2 = angular.isObject(null);
-//  console.log(flag2)
+//  console.log(flag2)  false
+
+//  9 angular.element() 转换原生的DOM元素为jQuery对象 虽然内置了jQuery但是不能直接用
 
 
 
