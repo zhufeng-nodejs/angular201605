@@ -18,6 +18,14 @@
 <script src="angular.js"></script>
 <script>
     var app = angular.module('myApp', []);
+    app.run(function ($rootScope) {
+        $rootScope.$on('age', function (event,data ) {
+            console.log(event);
+            console.log(event.currentScope);
+//            console.log(event,data);
+            $rootScope.age = data;
+        });
+    });
     app.controller('myCtrl1',function ($scope) {
         $scope.name = 'zfpx';
         $scope.price = 100;
@@ -25,19 +33,31 @@
 //        将 $scope.price 和$scope.count的乘积 广播给他的儿子 myCtrl2
 //        用 $broadcast 广播
         $scope.$on('age', function (event,data ) {
+//            console.log(event.currentScope);
+//            console.log(event.defaultPrevented);
+//            console.log(event.name);
+//            console.log(event.preventDefault);
+//            console.log(event.stopPropagation);
+//            console.log(event.targetScope);
 //            console.log(event,data);
             $scope.age = data;
         });
         $scope.$watch('price',function () {
-
+            $scope.$broadcast('name',$scope.name );
         });
-        $scope.$broadcast('name',$scope.name );
+
     });
     app.controller('myCtrl2',function ($scope) {
         $scope.age = 8;
         $scope.$emit('age', $scope.age);
 //      用$on进行监听赋值给 $scope.name
         $scope.$on('name', function (event,data ) {
+//            console.log(event.currentScope);
+//            console.log(event.defaultPrevented);
+//            console.log(event.name);
+//            console.log(event.preventDefault);
+//            console.log(event.stopPropagation);
+//            console.log(event.targetScope);
 //            回调函数，外界获取不到data
 //            console.log(event);//输出结果
 //            currentScope  当前操作的作用域
